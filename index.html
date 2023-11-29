@@ -14,6 +14,11 @@
           <h1 class="text-3xl font-bold text-center">
             Employee Database Management
           </h1>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded createEmployee"
+          >
+            Add Employee
+          </button>
           <div class="border-4 mt-10 h-[500px] flex">
             <div class="w-[30%] border-r-4">
               <div>
@@ -31,6 +36,51 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="addEmployee">
+        <form class="addEmployee_create">
+          Add a new Employee
+          <div>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <input
+            type="text"
+            name="imageUrl"
+            placeholder="Image URL (Optional)"
+          />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="number"
+            name="contactNumber"
+            placeholder="Contact"
+            required
+          />
+          <input type="number" name="salary" placeholder="Salary" required />
+          <input type="text" name="address" placeholder="Address" required />
+          <input
+            type="date"
+            name="dob"
+            placeholder="Date of Birth"
+            class="addEmployee_create--dob"
+            required
+          />
+          <input
+            type="submit"
+            class="addEmployee_create--submit"
+            value="Submit"
+          />
+        </form>
       </div>
     </div>
     <script src="script.js"></script>

@@ -34,15 +34,12 @@
 
   addEmployeeForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const formData = new FormData(addEmployeeForm);
     const values = [...formData.entries()];
-    // console.log(values);
     let empData = {};
     values.forEach((val) => {
       empData[val[0]] = val[1];
     });
-    //console.log(empData);
     empData.id = employees[employees.length - 1].id + 1;
     empData.age = new Date().getFullYear() - parseInt(empData.dob.slice(0, 4), 10);
     empData.imageUrl = empData.imageUrl || "https://cdn-icons-png.flaticon.com/512/0/93.png";
@@ -71,6 +68,7 @@
         renderSingleEmployee();
       }
       renderEmployees();
+    }
   });
 
   const renderEmployees = () => {

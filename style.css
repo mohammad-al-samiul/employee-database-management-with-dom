@@ -1,3 +1,17 @@
+.selected {
+  background-color: rgb(38, 201, 92) !important;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.employee-list-item {
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  background-color: gainsboro;
+  padding: 5px 10px;
+}
+
 /* Add Employee - START */
 .addEmployee {
   display: none;
